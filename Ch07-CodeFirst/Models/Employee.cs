@@ -10,12 +10,12 @@ namespace Ch07_CodeFirst.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "請輸入 Name")]
         [StringLength(20, MinimumLength = 3, ErrorMessage = "最少需要3個字元！")]
         public string Name { get; set; }
 
         [Required]
-        [RegularExpression(@"^\d{4}\-?\d{3}\-?\d{3}$", ErrorMessage = "需為 09XX-XXX-XX")]
+        [RegularExpression(@"^\d{4}\-?\d{3}\-?\d{3}$", ErrorMessage = "需為 09XX-XXX-XXX")]
         public string Mobile { get; set; }
 
         [Required(ErrorMessage = "請輸入 Email")]

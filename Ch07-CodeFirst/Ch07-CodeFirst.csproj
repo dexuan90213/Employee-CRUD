@@ -135,6 +135,10 @@
     <Compile Include="Migrations\202105301130009_InitialSeedData.Designer.cs">
       <DependentUpon>202105301130009_InitialSeedData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105301317344_AddModelValidate.cs" />
+    <Compile Include="Migrations\202105301317344_AddModelValidate.Designer.cs">
+      <DependentUpon>202105301317344_AddModelValidate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CmsContext.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -180,6 +184,8 @@
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -200,6 +206,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105301130009_InitialSeedData.resx">
       <DependentUpon>202105301130009_InitialSeedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105301317344_AddModelValidate.resx">
+      <DependentUpon>202105301317344_AddModelValidate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
